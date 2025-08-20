@@ -24,6 +24,7 @@
         non_local_definitions,
     )
 )))]
+#![cfg_attr(all(target_os = "wasi", target_env = "p2"), feature(wasip2))]
 
 //! Rust bindings to the Python interpreter.
 //!
